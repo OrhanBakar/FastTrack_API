@@ -74,8 +74,8 @@ public class P03_JsonPath extends HrTestBase {
 
         //get me all employees first_name who is making salary more than 15000
         JsonPath jsonPath = response.jsonPath();
-        List<String > highSalary = jsonPath.getList("items.findAll {it.salary>15000}.first_name");
-        System.out.println("highSalary = " + highSalary);
+        List<String > wellPaidEmployees = jsonPath.getList("items.findAll {it.salary>15000}.first_name");
+        System.out.println("highSalary = " + wellPaidEmployees);
 
     }
 }
